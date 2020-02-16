@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from './logo_transparent.png';
+import logo from './images/logo_transparent.png';
 import './sass/LandingPage.sass'
 import Header from './Header'
 
@@ -13,7 +13,7 @@ export class LandingPage extends Component
               <ul className="nav-grid">
                   <li>
                       <a href="#top">
-                          <img src={logo} alt="Logo" />
+                          <img className="logo" src={logo} alt="Logo" />
                       </a>
                   </li>
                   <li>

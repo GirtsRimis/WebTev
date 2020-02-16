@@ -1,6 +1,7 @@
 import React from 'react';
 import LandingPage from './components/LandingPage';
 import './App.css';
+import AboutUs from './components/AboutUs'
 
 class App extends React.Component
 {
@@ -9,6 +10,7 @@ class App extends React.Component
     return (
       <div className="App">
         <LandingPage />
+        <AboutUs />
       </div>      
     )
   }
