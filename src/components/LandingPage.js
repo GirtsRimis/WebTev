@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import logo from './logo_transparent.png';
 import './sass/LandingPage.sass'
+import Header from './Header'
 
 export class LandingPage extends Component 
 {
@@ -29,6 +30,7 @@ export class LandingPage extends Component
                   </li>
               </ul>
           </nav>
+          <Header/>
         </div>      
       )
     }
