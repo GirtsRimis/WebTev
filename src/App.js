@@ -1,7 +1,8 @@
 import React from 'react';
-import LandingPage from './components/LandingPage';
 import './App.css';
+import LandingPage from './components/LandingPage';
 import AboutUs from './components/AboutUs'
+import Products from './components/Products'
 
 class App extends React.Component
 {
@@ -11,6 +12,7 @@ class App extends React.Component
       <div className="App">
         <LandingPage />
         <AboutUs />
+        <Products />
       </div>      
     )
   }
