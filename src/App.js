@@ -4,6 +4,7 @@ import LandingPage from './components/LandingPage';
 import AboutUs from './components/AboutUs'
 import Products from './components/Products'
 import Portfolio from './components/Portfolio';
+import Contacts from './components/Contacts';
 
 class App extends React.Component
 {
@@ -15,6 +16,7 @@ class App extends React.Component
         <AboutUs />
         <Products />
         <Portfolio />
+        <Contacts />
       </div>
     )
   }
