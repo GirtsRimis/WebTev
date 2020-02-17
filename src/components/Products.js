@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import './sass/Products.sass'
 import ProductTemplate from './ProductTemplate'
+import lapas from './images/lapas.png'
+import komrec from './images/komerc.png'
+import datubaze from './images/datubazees.png'
+import test from './images/testesana.png'
 
 export class Products extends Component 
 {
@@ -9,19 +13,23 @@ export class Products extends Component
             <div className="products">
                 <ProductTemplate 
                     product="Lapas" 
-                    src="../images/lapas.png" alt="www"
+                    image={lapas} alt="www"
+                    text="Lasīt vairāk"
                 />
                 <ProductTemplate 
                     product="Komerclapas" 
-                    src="../images/komerc.png" alt="EUR"
+                    image={komrec} alt="EUR"
+                    text="Lasīt vairāk"
                 />
                 <ProductTemplate 
                     product="Datubāze" 
-                    src="../images/datubazees.png" alt="db"
+                    image={datubaze} alt="db"
+                    text="Lasīt vairāk"
                 />
                 <ProductTemplate 
                     product="Testēšana" 
-                    src="../images/testesana.png" alt="test"
+                    image={test} alt="test"
+                    text="Lasīt vairāk"
                 />
             </div>
         )

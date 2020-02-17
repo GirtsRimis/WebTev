@@ -7,7 +7,8 @@ export class ProductTemplate extends Component
         return (
             <div className="productName">
                 <h3>{this.props.product}</h3>
-                <img src="/images/lapas.png" alt={this.props.alt} />
+                <img src={this.props.image} alt={this.props.alt} />
+                <button>{this.props.text}</button>
             </div>
         )
     }
