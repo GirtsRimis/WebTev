@@ -5,6 +5,7 @@ import AboutUs from './components/AboutUs'
 import Products from './components/Products'
 import Portfolio from './components/Portfolio';
 import Contacts from './components/Contacts';
+import Footer from './components/Footer';
 
 class App extends React.Component
 {
@@ -17,6 +18,7 @@ class App extends React.Component
         <Products />
         <Portfolio />
         <Contacts />
+        <Footer />
       </div>
     )
   }
