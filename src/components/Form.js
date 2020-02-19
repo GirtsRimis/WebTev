@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
+import './sass/Form.sass'
 
 export default class Form extends Component {
     render() {
         return (
-            <div>
+            <div className="form">
                 <form>
-                    <input type="text" name="e-mail" value="piem. 'example@gmail.com'" />
-                    <input type="submit" value="Sūtīt" />
+                    <input className="form-input" type="text" name="e-mail"  placeholder="piem. 'example@gmail.com'" />
+                    <br></br>
+                    <input className="submit" type="submit" value="Sūtīt" />
                 </form>
             </div>
         )
