@@ -1,0 +1,50 @@
+$textColor: white
+$logoWidth: 150px
+    
+.logo
+    width: $logoWidth
+    height: auto
+
+nav
+    background-color: rgba(0, 0, 0, 1)
+    ul
+        margin: 0
+        padding: 0
+        list-style: none
+
+    li
+        padding: 1rem
+
+.underline
+  position: relative
+  top: 35%
+  display: inline-block
+  font-size: 16px
+  line-height: 24px
+  height: 24px
+  color: white
+  text-decoration: none
+
+  &::after
+    content: ''
+    position: absolute
+    display: block
+    bottom: 0
+    left: 50%
+    width: 0
+    height: 2px
+    border-bottom: 2px solid white
+    transition: all 0.15s linear
+
+  transition: all 0.3s linear
+
+  &:hover
+    color: #d4d4d4 
+
+    &::after
+      left: 0
+      width: 100%
+    
+.nav-grid
+    display: grid
+    grid-template-columns: repeat(5, 1fr)

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './sass/LandingPage.sass'
+import './sass/Navbar.sass'
 import logo from './images/logo_transparent.png';
 
 export class Navbar extends Component {

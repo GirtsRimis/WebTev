@@ -10,10 +10,10 @@ export default class FooterLogo extends Component {
         return (
             <div className="footer-logo">
                 <h3>{this.props.title}</h3>
-                <a href="#top"><img src={facebook} /></a>
-                <a href="#top"><img src={twitter} /></a>
-                <a href="#top"><img src={instagram} /></a>
-                <a href="#top"><img src={linkedin} /></a>
+                <a href="#top"><img src={facebook} alt="Facebook" /></a>
+                <a href="#top"><img src={twitter} alt="Twitter" /></a>
+                <a href="#top"><img src={instagram} alt="Instagram" /></a>
+                <a href="#top"><img src={linkedin} alt="Linkedin" /></a>
             </div>
         )
     }

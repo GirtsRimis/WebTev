@@ -6,9 +6,9 @@ export default class FooterInfo extends Component {
         return (
             <div className="footer-info">
                 <h3>{this.props.title}</h3>
-                <a>{this.props.info1}</a>
-                <a>{this.props.info2}</a>
-                <a>{this.props.info3}</a>
+                <a href="#top">{this.props.info1}</a>
+                <a href="#top">{this.props.info2}</a>
+                <a href="#top">{this.props.info3}</a>
             </div>
         )
     }
