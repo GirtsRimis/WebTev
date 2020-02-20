@@ -48,3 +48,25 @@ nav
 .nav-grid
     display: grid
     grid-template-columns: repeat(5, 1fr)
+
+.dropdown img
+  display: none
+
+@media screen and ( max-width: 600px)
+    .nav-grid .underline
+      display: none
+
+    .nav-grid
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: none
+
+    .logo
+      width: 100px
+      height: auto
+
+    .dropdown img
+      width: 30px
+      height: auto
+      display: inline-block
+      float: right
