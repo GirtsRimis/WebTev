@@ -6,7 +6,7 @@ import dropdown from './images/dropdown.png'
 export class Navbar extends Component 
 {
 
-    myFunction = () =>
+    showDropdown = () =>
     {
         const x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
@@ -16,9 +16,20 @@ export class Navbar extends Component
         }
     } 
 
+    addSticky = (e) =>
+    {
+        const navbar = document.getElementById("myTopnav");
+        const sticky = navbar.offsetHeight();
+
+        if (window.screenTop >= sticky)
+        {
+            navbar.classList.add("sticky");
+        }
+    }
+
     render() {
         return (
-            <div class="topnav" id="myTopnav">
+            <div onScroll={this.addSticky} className="topnav" id="myTopnav">
             <a href="#logo" className="logo" >
                 <img src={logo} />
             </a>
@@ -26,12 +37,12 @@ export class Navbar extends Component
             <a href="#contact" className="underline">Peidāvājumi</a>
             <a href="#portfolio" className="underline">Portfolio</a>
             <a href="#about" className="underline">Kontakti</a>
-            <div class="dropdown">
-              <button class="dropbtn">
-                <i class="fa fa-caret-down"></i>
+            <div className="dropdown">
+              <button className="dropbtn">
+                <i className="fa fa-caret-down"></i>
               </button>
             </div>
-            <a href="javascript:void(0);" class="icon" onClick={this.myFunction}>&#9776;</a>
+            <a className="icon" onClick={this.showDropdown}>&#9776;</a>
           </div> 
         )
     }
