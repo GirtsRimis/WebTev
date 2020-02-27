@@ -21,7 +21,7 @@ export class Navbar extends Component
         const navbar = document.getElementById("myTopnav");
         const sticky = navbar.offsetHeight();
 
-        if (window.screenTop >= sticky)
+        if (window.scrollY <= sticky)
         {
             navbar.classList.add("sticky");
         }
@@ -29,7 +29,7 @@ export class Navbar extends Component
 
     render() {
         return (
-            <div onScroll={this.addSticky} className="topnav" id="myTopnav">
+            <nav onScroll={this.addSticky} className="topnav" id="myTopnav">
             <a href="#logo" className="logo" >
                 <img src={logo} />
             </a>
@@ -43,7 +43,7 @@ export class Navbar extends Component
               </button>
             </div>
             <a className="icon" onClick={this.showDropdown}>&#9776;</a>
-          </div> 
+          </nav> 
         )
     }
 }
