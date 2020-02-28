@@ -9,7 +9,8 @@ export class Portfolio extends Component {
             <div className="portfolio">
                 <h1>Portfolio</h1>
                 <h2>Mūsu radītie produkti:</h2>
-                <PortfolioComponent
+                <p>Produkti vēl top</p>
+                {/* <PortfolioComponent
                     heading="WebSite"
                     image={img}
                     altText="Image"
@@ -21,7 +22,7 @@ export class Portfolio extends Component {
 
                     smallHeading3="Heading3"
                     text3="Text3"
-                />
+                /> */}
             </div>
         )
     }

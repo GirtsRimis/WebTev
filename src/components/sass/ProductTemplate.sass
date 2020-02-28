@@ -33,13 +33,17 @@
         transition: 400ms
 
 .TextArea
-    display: none
+    transition: opacity 1s ease-out
+    opacity: 0
+    height: 0
+    overflow: hidden
     font-weight: bold
     font-size: 24px
     padding-right: 1rem
     padding-left: 1rem
-    transition: display 2s
 
 
 .TextArea-show
     display: block
+    opacity: 1
+    height: auto
