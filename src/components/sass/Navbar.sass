@@ -1,19 +1,23 @@
 .underline
+  z-index: 2
   display: grid
   grid-template-columns: repeat(4, 1fr)
   position: relative
-  top: 15px
+  top: 25px
 
   &:hover
     color: #aaaaaa
 
 .topnav
+  transition: 400ms
   background-color: rgba(30, 30, 30, 0.9)
   overflow: hidden
+  height: auto
 
   .logo
     img
-      width: 120px
+      transition: width 300ms ease-in
+      width: 180px
       height: auto
       display: block
 
@@ -26,81 +30,58 @@
     text-decoration: none
     font-size: 17px
 
-.topnav .icon
-  display: none
-
-.dropdown
-  float: left
-  overflow: hidden
-  display: none
-
-  .dropbtn
-    font-size: 17px
-    border: none
-    outline: none
-    color: white
-    padding: 14px 16px
-    background-color: inherit
-    font-family: inherit
-    margin: 0
-
-.dropdown-content
-  display: none
-  position: absolute
-  background-color: #f9f9f9
-  min-width: 160px
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
-  z-index: 1
-
-  a
-    float: none
-    color: black
-    padding: 12px 16px
-    text-decoration: none
-    display: block
-    text-align: left
-
-.dropdown-content a:hover
-  background-color: #ddd
-  color: black
-
-.dropdown:hover .dropdown-content
-  display: block
+.topnav 
+  .icon
+    display: none
 
 .sticky
   background: black
   position: fixed
+  height: auto
   width: 100%
   z-index: 2
 
+  .logo
+    img
+      width: 120px
+      height: auto
+
+  .underline
+      top: 15px
+
 @media screen and (max-width: 700px)
-  .topnav a:not(:first-child), .dropdown .dropbtn
+  .topnav a:not(:first-child)
+    z-index: 2
+    position: relative
     display: none
 
-  .topnav a.icon
-    float: right
-    display: block
-    position: relative
-    top: 15px
-    cursor: pointer
+  .topnav
+    .icon
+      float: right
+      position: relative
+      margin: 14px 16px
+      top: 15px
+      display: block
+      font-size: 20px
+      cursor: pointer
+      color: white
+      background: none
+      border: none
 
 @media screen and (max-width: 700px)
   .topnav.responsive
-    position: relative
+    z-index: 2
+    position: fixed
+    width: 100%
+
+    button.icon
+      position: absolute
+      right: 0
+      top: 15px
+      cursor: pointer
 
     a
-      &.icon
-        position: absolute
-        right: 0
-        top: 15px
-        cursor: pointer
-
       float: none
       display: block
       text-align: left
       top: 0
-
-    .dropdown .dropbtn
-      display: block
-      width: 100%
-      text-align: left

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './sass/Portfolio.sass'
-import PortfolioComponent from './PortfolioComponent'
-import img from './images/randomsite.png'
+// import PortfolioComponent from './PortfolioComponent'
 
 export class Portfolio extends Component {
     render() {
