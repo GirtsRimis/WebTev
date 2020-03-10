@@ -13,13 +13,9 @@ export class Me extends Component {
                     un modernu mājas lapu, kā arī protu tai piedot augstāku funckionalitāti,
                     kas to noteikti padarīs pievilcīgāku lietotājam.
                 </p>
-                <p>Esmu studens un apgūstu programmēšanu. Novērtēju sevi kā iesācēja līmeņa
-                    programmētāju, bet spēju izveidot labu produktu. Pie katras problēmas
-                    rūpīgi apskatu doto dokumentāciju un radu risinājumu.
-                </p>
                 <p>
-                    Iesācējs - tas nozīmē, ka produkta izstrāde ir mazliet ilgākā, nekā pie pieredzējušāka
-                    programmētāja.
+                    Lai radītu labu programmatūru, izmantoju jaunākās dizaina tendeces un tehnoloģijas, 
+                    pievēršu lielu uzmanību dizainam un programmatūras sajūtai.
                 </p>
             </div>
         )

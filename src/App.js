@@ -13,11 +13,16 @@ class App extends React.Component
   {
     return (
       <div className="App">
-        <LandingPage />
-        <AboutUs />
-        <Products />
-        <Portfolio />
-        <Contacts />
+        <LandingPage 
+          href1="#about"
+          href2="#products"
+          href3="#portfolio"
+          href4="#contacts"
+        />
+        <AboutUs id="about"/>
+        <Products id="products"/>
+        <Portfolio id="portfolio"/>
+        <Contacts id="contacts"/>
         <Footer />
       </div>
     )

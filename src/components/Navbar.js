@@ -58,10 +58,10 @@ export class Navbar extends Component
                 <a href="#logo" className="logo" >
                     <img src={logo} alt="logo"/>
                 </a>
-                <a href="#news" className="underline">Par mums</a>
-                <a href="#contact" className="underline">Peidāvājumi</a>
-                <a href="#portfolio" className="underline">Portfolio</a>
-                <a href="#about" className="underline">Kontakti</a>
+                <a href={this.props.href1} className="underline">Par mums</a>
+                <a href={this.props.href2} className="underline">Peidāvājumi</a>
+                <a href={this.props.href3} className="underline">Portfolio</a>
+                <a href={this.props.href4} className="underline">Kontakti</a>
                 <button className="icon" onClick={this.showDropdown}>&#9776;</button>
             </nav> 
         )
